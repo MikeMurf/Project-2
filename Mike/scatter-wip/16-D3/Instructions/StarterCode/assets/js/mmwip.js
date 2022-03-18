@@ -22,7 +22,7 @@ var chartGroup = svg.append("g")
 var xProperty = "fully_vaccinated_per_hundred";
 var yProperty = "case_fatality_ratio";
 
-// update x-scale function 
+// function to update x-scale 
 function xScale(data, xProperty) {
 	// create scale
 	var xLinearScale = d3.scaleLinear()
@@ -33,7 +33,7 @@ function xScale(data, xProperty) {
 	return xLinearScale;
 }
 
-// function to update y-scale var when axis label clicked
+// function to update y-scale
 function yScale(data, yProperty) {
 	// create scale
 	var yLinearScale = d3.scaleLinear()
@@ -62,8 +62,7 @@ function renderyAxis(newYScale, yAxis) {
 	return yAxis;
 }
 
-// Function to render circles group with a transition
-// to new circles
+// Function to render circles group with a transition to new circles
 function renderCircles(circlesGroup, newXScale, xProperty, newYScale, yProperty) {
 	circlesGroup.transition()
 	.duration(1000)
@@ -230,7 +229,7 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
 	.text(d => d.country_id)
 	.attr("x", d => xLinearScale(d[xProperty])) 
 	.attr("y", d => yLinearScale(d[yProperty])) 
-	.attr("class", "country_id") 
+	.attr("class", "stateText") 
 	.attr("font-size", "9");
 
 	// updateToolTip function above csv import
