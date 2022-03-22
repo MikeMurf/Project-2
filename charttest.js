@@ -52,7 +52,7 @@ function getCovidData(country) {
 //   function buildCharts(country) {
     // Format the date and cast the miles value to a number
     countryData.forEach(function(data) {
-        data.date = parseTime(data.date);
+        data.recovered = parseTime(data.recovered);
         data.confirmed = +data.confirmed;
     });
 
@@ -61,7 +61,7 @@ function getCovidData(country) {
     // d3.extent returns the an array containing the min and max values for the property specified
     var xTimeScale = d3.scaleTime()
         .range([0, chartWidth])
-        .domain(d3.extent(countryData, data => data.date));
+        .domain(d3.extent(countryData, data => data.recovered));
 
     // Configure a linear scale with a range between the chartHeight and 0
     // Set the domain for the xLinearScale function
@@ -77,7 +77,7 @@ function getCovidData(country) {
     // Configure a drawLine function which will use our scales to plot the line's points
     var drawLine = d3
         .line()
-        .x(data => xTimeScale(data.date))
+        .x(data => xTimeScale(data.recovered))
         .y(data => yLinearScale(data.confirmed));
 
     // Append an SVG path and plot its points using the line function
