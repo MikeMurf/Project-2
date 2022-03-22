@@ -31,7 +31,7 @@ var parseTime = d3.timeParse("%B");
 var country_name = "Australia"
 
 // Load data from miles-walked-this-month.csv
-d3.json(`/api/v1.0/covid-data/country_name/${country_name}`).then(function(covidData) {
+d3.json('http://127.0.0.1:5000').then(function(covidData) {
   const countryData = covidData.filter(changeCountry);
 
   function changeCountry(country_id) {
