@@ -1,5 +1,7 @@
 import psycopg2
 
+import csv
+
 import json
 import collections
 from flask import Flask, jsonify
@@ -52,9 +54,6 @@ def index():
         covid_data_dict.append(d)
 
     covid_data = json.dumps(covid_data_dict)
-
-    # with open('student_objects.js', 'w') as f:
-    #     f.write(j)
 
     cur.close()
     conn.close()
