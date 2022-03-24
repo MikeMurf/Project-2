@@ -74,7 +74,8 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 <img width="427" alt="image" src="https://user-images.githubusercontent.com/92240890/159849846-3cabbd95-245b-4447-8cae-ecc31b86b775.png"> 
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/92240890/159850260-2a938d78-aa99-4b65-b5ea-f901223efd47.png"> 
- 
+
+
 **7. Project Datasets:**
 
 **The datasets for the project can be found at the following links.**
