@@ -1,5 +1,5 @@
 # Project-2
- Project2:    Visualize Me, Captain!
+## Project2:    Visualize Me, Captain!
  
 1. Project Overview:
 The project was initiated to tell a story with data. 
@@ -69,10 +69,13 @@ https://www.worldometers.info/world-population/population-by-country/
 https://ourworldindata.org/covid-vaccinations
 
 8. Covid-19 Database Entity Relationship Diagram:
-Original ERD:      
+
+Original ERD:     
+
 <img width="245" alt="image" src="https://user-images.githubusercontent.com/92240890/159849814-85e46589-e85d-4af4-94f1-738d830f641b.png">
 
 New ERD:
+
 <img width="148" alt="image" src="https://user-images.githubusercontent.com/92240890/159849787-e7925684-92f0-4ff3-98cd-2a79ffecfaa2.png">
 
 9. Covid-19 Database Description
