@@ -61,7 +61,7 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 **6. Covid-19 Visualisations:**    
 **As part of this project, we developed three visualizations:**
 
-**1.A bubble chart representing confirmed cases and deaths and case-fatality-ratio plotted against fully vaccinated, boosted, and unvaccinated populations for each country.** 
+**1.A bubble chart representing confirmed cases and deaths plotted against fully vaccinated, boosted, and unvaccinated populations for each country.** 
 
 <img width="455" alt="image" src="https://user-images.githubusercontent.com/92240890/159849872-ca37422b-71a5-428c-940a-d66743050db0.png">
 
