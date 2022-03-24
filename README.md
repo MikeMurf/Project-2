@@ -76,7 +76,6 @@ https://ourworldindata.org/covid-vaccinations
 
 
 8. Covid-19 Database Entity Relationship Diagram:
-
 Original ERD:     
 
 <img width="245" alt="image" src="https://user-images.githubusercontent.com/92240890/159849814-85e46589-e85d-4af4-94f1-738d830f641b.png">
