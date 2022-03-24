@@ -18,7 +18,7 @@ The specific requirements of the project are:
 *   2.7) Your project must include some level of user-driven interaction (e.g., menus, dropdowns, textboxes). 
 *   2.8) Your final visualization should ideally include at least three views.
 
-The “Project-2” directory contains the following files submitted for assessment:
+**The “Project-2” directory contains the following files submitted for assessment:**
 - “index.html” – the dashboard containing the COVID-19 visualisations created as part of this project.
 - “app.py” – the Flask API that must be run to extract the data from the PostgreSQL database and convert it to JSON format for use in creating visualisations in the dashboard.
 - “assets” – a folder containing the Javascript files used to create visualisations, as well as the CSS stylesheet files.
@@ -27,25 +27,25 @@ The “Project-2” directory contains the following files submitted for assessm
 - “presentation” – a folder containing “Project-2”, the PowerPoint presentation for the project,
 - “proposal” – a folder containing "project-2-project-proposal", the original proposal for the project.
 
-2. Team Members:
+**2. Team Members:**
 - Megan Greenhill 
 - Hesh Kuruppuge 
 - Jacqueline Xia 
 - Mike Murphy
     
-3. Project Brief Description:
+**3. Project Brief Description:**
 
 The project uses a Python Flask-powered API to access an integrated PostgreSQL database that contains COVID-19 information. The database can be updated as frequently as required.
 This information has been sourced from the John Hopkins University COVID-19 time series datasets, vaccination information sourced from Our World in Data, and world population information sourced from Worldometers.
 This provides the basis for an ongoing analysis of COVID-19 and its global impact using user selected visualisations.
 
-4. Project Evolution:
+**4. Project Evolution:**
 
 •    To commence this project, we utilised the work from our prior ETL project where we extracted and transformed COVID-19 data from JHU, Our World in Data, Worldometers to create tables, which were then loaded into a PostgreSQL relational database.
 •    Instead of creating individual tables as in the ETL project, we altered our Jupyter Notebook script to merge all tables into one full table, then loaded this to the database.
 •    This would allow us to create a single JSON file with this data when we developed the Flask-powered API.
 
-5. Flask-powered API:
+**5. Flask-powered API:**
 
 •    A Flask-powered API was created to extract the full COVID table from the PostgreSQL database and create a JSON file.
 •    This extraction was achieved using a Python library called psycopg2.
@@ -54,7 +54,7 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 <img width="218" alt="image" src="https://user-images.githubusercontent.com/92240890/159849919-6552fa5d-9ec7-4951-86bc-b0f26ff71417.png">
  
 
-6. Covid-19 Visualisations:    
+**6. Covid-19 Visualisations:**    
 As part of this project, we developed three visualizations:
 
 1.A bubble chart representing confirmed cases and deaths and case-fatality-ratio plotted against fully vaccinated, boosted, and unvaccinated populations for each country.
@@ -67,7 +67,7 @@ As part of this project, we developed three visualizations:
 <img width="427" alt="image" src="https://user-images.githubusercontent.com/92240890/159849846-3cabbd95-245b-4447-8cae-ecc31b86b775.png">
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/92240890/159850260-2a938d78-aa99-4b65-b5ea-f901223efd47.png">
  
-7. Project Datasets:
+**7. Project Datasets:**
 
 The datasets for the project can be found at the following links.
 •    “JHU – Time Series Daily Reports”
@@ -78,20 +78,20 @@ https://www.worldometers.info/world-population/population-by-country/
 https://ourworldindata.org/covid-vaccinations
 
 
-8. Covid-19 Database Entity Relationship Diagram:
-Original ERD:     
+**8. Covid-19 Database Entity Relationship Diagram:**
+**Original ERD:**     
 
 <img width="245" alt="image" src="https://user-images.githubusercontent.com/92240890/159849814-85e46589-e85d-4af4-94f1-738d830f641b.png">
 
-New ERD:
+**New ERD:**
 
 <img width="148" alt="image" src="https://user-images.githubusercontent.com/92240890/159849787-e7925684-92f0-4ff3-98cd-2a79ffecfaa2.png">
 
-9. Covid-19 Database Description
+**9. Covid-19 Database Description**
 
 The key to the data base was to use the International Standards Organisation (iso_code: ISO 3166-1 alpha-3 – three-letter country code) henceforth referred to as “iso-code”, to create relationships between the tables. The “country-codes” table contains the “iso-code” and matching “country-name” for all countries covered by the “iso-code” and was generated during the Extraction phase of the project. The “covid-cases” table contains the basic cleansed data from the JHU Data Sets which form the basis of the global view of Covid-19 cases. The “vaccinations” table contains vaccination status from the Our World in data Vaccination data set. The “full_covid_table” contains the complete set of data used to drive the visualisations for the project.
 
-10. Covid-19 Data Load:
+**10. Covid-19 Data Load:**
 
 The data load phase of the assignment uses urls / wget downloads as API calls are not available for the datasets needed. The three JHU time series data sets are retrieved using this method.
 
