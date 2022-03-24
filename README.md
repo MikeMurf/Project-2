@@ -78,13 +78,15 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 **7. Project Datasets:**
 
 **The datasets for the project can be found at the following links.**
-•    “JHU – Time Series Daily Reports”
-https://coronavirus.jhu.edu/data
-•    “World population data”
-https://www.worldometers.info/world-population/population-by-country/
-•    “Vaccination rates per country”
-https://ourworldindata.org/covid-vaccinations
+* “JHU – Time Series Daily Reports”
+* https://coronavirus.jhu.edu/data 
 
+* “World population data” 
+* https://www.worldometers.info/world-population/population-by-country/ 
+
+* “Vaccination rates per country” 
+
+* https://ourworldindata.org/covid-vaccinations 
 
 **8. Covid-19 Database Entity Relationship Diagram:**
 **Original ERD:**     
