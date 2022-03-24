@@ -1,6 +1,8 @@
 # Project-2
 ## Project2:    Visualize Me, Captain!
- 
+
+![image](https://user-images.githubusercontent.com/89948865/159869882-8c2ee887-7b77-4fbe-93b5-b6304d905494.png)
+
 1. Project Overview:
 The project was initiated to tell a story with data. 
 The specific requirements of the project are:
