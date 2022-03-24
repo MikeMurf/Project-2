@@ -6,7 +6,7 @@
 #### 1. Project Overview:
 **The project was initiated to tell a story with data.** 
 
-The specific requirements of the project are:
+**The specific requirements of the project are:**
 1. Your visualization must include a Python Flask–powered API, HTML/CSS, JavaScript, and at least one database (SQL, MongoDB, SQLite, etc.). 
 3. Your project should fall into one of the below four tracks: 
 *   2.1) A custom “creative” D3.js project (i.e., a nonstandard graph or chart) 
@@ -47,10 +47,14 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 
 **5. Flask-powered API:**
 
-•    A Flask-powered API was created to extract the full COVID table from the PostgreSQL database and create a JSON file.
-•    This extraction was achieved using a Python library called psycopg2.
-•    Each column of the database table was assigned to a dictionary, which was then JSONified and returned through the app. This app would then be called on in the JS script to create visualisations.
-<img width="228" alt="image" src="https://user-images.githubusercontent.com/92240890/159849911-2ab337eb-6a34-43bf-975b-7475d49d2247.png">
+* A Flask-powered API was created to extract the full COVID table from the PostgreSQL database and create a JSON file.
+* This extraction was achieved using a Python library called psycopg2.
+* Each column of the database table was assigned to a dictionary, which was then JSONified and returned through the app. 
+* This app would then be called on in the JS script to create visualisations. 
+ 
+ 
+<img width="228" alt="image" src="https://user-images.githubusercontent.com/92240890/159849911-2ab337eb-6a34-43bf-975b-7475d49d2247.png"> 
+
 <img width="218" alt="image" src="https://user-images.githubusercontent.com/92240890/159849919-6552fa5d-9ec7-4951-86bc-b0f26ff71417.png">
  
 
