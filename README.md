@@ -37,11 +37,13 @@ This information has been sourced from the John Hopkins University COVID-19 time
 This provides the basis for an ongoing analysis of COVID-19 and its global impact using user selected visualisations.
 
 4. Project Evolution:
+
 •    To commence this project, we utilised the work from our prior ETL project where we extracted and transformed COVID-19 data from JHU, Our World in Data, Worldometers to create tables, which were then loaded into a PostgreSQL relational database.
 •    Instead of creating individual tables as in the ETL project, we altered our Jupyter Notebook script to merge all tables into one full table, then loaded this to the database.
 •    This would allow us to create a single JSON file with this data when we developed the Flask-powered API.
 
 5. Flask-powered API:
+
 •    A Flask-powered API was created to extract the full COVID table from the PostgreSQL database and create a JSON file.
 •    This extraction was achieved using a Python library called psycopg2.
 •    Each column of the database table was assigned to a dictionary, which was then JSONified and returned through the app. This app would then be called on in the JS script to create visualisations.
@@ -62,6 +64,7 @@ As part of this project, we developed three visualizations:
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/92240890/159850260-2a938d78-aa99-4b65-b5ea-f901223efd47.png">
  
 7. Project Datasets:
+
 The datasets for the project can be found at the following links.
 •    “JHU – Time Series Daily Reports”
 https://coronavirus.jhu.edu/data
@@ -69,6 +72,7 @@ https://coronavirus.jhu.edu/data
 https://www.worldometers.info/world-population/population-by-country/
 •    “Vaccination rates per country”
 https://ourworldindata.org/covid-vaccinations
+
 
 8. Covid-19 Database Entity Relationship Diagram:
 
