@@ -41,9 +41,9 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 
 **4. Project Evolution:**
 
-•    To commence this project, we utilised the work from our prior ETL project where we extracted and transformed COVID-19 data from JHU, Our World in Data, Worldometers to create tables, which were then loaded into a PostgreSQL relational database.
-•    Instead of creating individual tables as in the ETL project, we altered our Jupyter Notebook script to merge all tables into one full table, then loaded this to the database.
-•    This would allow us to create a single JSON file with this data when we developed the Flask-powered API.
+* To commence this project, we utilised the work from our prior ETL project where we extracted and transformed COVID-19 data from JHU, Our World in Data, Worldometers to create tables, which were then loaded into a PostgreSQL relational database. 
+* Instead of creating individual tables as in the ETL project, we altered our Jupyter Notebook script to merge all tables into one full table, then loaded this to the database. 
+* This would allow us to create a single JSON file with this data when we developed the Flask-powered API.
 
 **5. Flask-powered API:**
 
@@ -59,16 +59,20 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
  
 
 **6. Covid-19 Visualisations:**    
-As part of this project, we developed three visualizations:
+**As part of this project, we developed three visualizations:**
 
-1.A bubble chart representing confirmed cases and deaths and case-fatality-ratio plotted against fully vaccinated, boosted, and unvaccinated populations for each country.
+**1.A bubble chart representing confirmed cases and deaths and case-fatality-ratio plotted against fully vaccinated, boosted, and unvaccinated populations for each country.** 
+
 <img width="455" alt="image" src="https://user-images.githubusercontent.com/92240890/159849872-ca37422b-71a5-428c-940a-d66743050db0.png">
 
-2. A bar chart representing the ten countries with the highest number of confirmed cases as of the date of the last database update, March 15, 2022.
+**2. A bar chart representing the ten countries with the highest number of confirmed cases as of the date of the last database update, March 15, 2022.** 
+
 <img width="457" alt="image" src="https://user-images.githubusercontent.com/92240890/159849860-4fa57e81-2c3a-4da5-9a07-9d512510e6b5.png">
 
-3. Two scatter plots representing the number of confirmed cases and deaths over time for any country of the user’s choice, which can be selected using a dropdown list.
-<img width="427" alt="image" src="https://user-images.githubusercontent.com/92240890/159849846-3cabbd95-245b-4447-8cae-ecc31b86b775.png">
+**3. Two scatter plots representing the number of confirmed cases and deaths over time for any country of the user’s choice, which can be selected using a dropdown list.** 
+
+<img width="427" alt="image" src="https://user-images.githubusercontent.com/92240890/159849846-3cabbd95-245b-4447-8cae-ecc31b86b775.png"> 
+
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/92240890/159850260-2a938d78-aa99-4b65-b5ea-f901223efd47.png">
  
 **7. Project Datasets:**
