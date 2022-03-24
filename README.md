@@ -31,6 +31,7 @@ The “Project-2” directory contains the following files submitted for assessm
 - Mike Murphy
     
 3. Project Brief Description:
+
 The project uses a Python Flask-powered API to access an integrated PostgreSQL database that contains COVID-19 information. The database can be updated as frequently as required.
 This information has been sourced from the John Hopkins University COVID-19 time series datasets, vaccination information sourced from Our World in Data, and world population information sourced from Worldometers.
 This provides the basis for an ongoing analysis of COVID-19 and its global impact using user selected visualisations.
@@ -49,6 +50,7 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
  
 6. Covid-19 Visualisations:    
 As part of this project, we developed three visualizations:
+
 1. A bubble chart representing confirmed cases and deaths and case-fatality-ratio plotted against fully vaccinated, boosted, and unvaccinated populations for each country.
 <img width="455" alt="image" src="https://user-images.githubusercontent.com/92240890/159849872-ca37422b-71a5-428c-940a-d66743050db0.png">
 
@@ -79,11 +81,15 @@ New ERD:
 <img width="148" alt="image" src="https://user-images.githubusercontent.com/92240890/159849787-e7925684-92f0-4ff3-98cd-2a79ffecfaa2.png">
 
 9. Covid-19 Database Description
-The key to the data base was to use the International Standards Organisation (iso_code: ISO 3166-1 alpha-3 – three-letter country code) henceforth referred to as “iso-code”, to create relationships between the tables. The “country-codes” table contains the “iso-code” and matching “country-name” for all countries covered by the “iso-code” and was generated during the Extraction phase of the project. The “covid-cases” table contains the basic cleansed data from the JHU Data Sets which form the basis of the global view of Covid-19 cases. The “vaccinations” table contains vaccination status from the Our World in data Vaccination data set. The “full_table” contains the complete set of data used to drive the visualisations for the project.
+
+The key to the data base was to use the International Standards Organisation (iso_code: ISO 3166-1 alpha-3 – three-letter country code) henceforth referred to as “iso-code”, to create relationships between the tables. The “country-codes” table contains the “iso-code” and matching “country-name” for all countries covered by the “iso-code” and was generated during the Extraction phase of the project. The “covid-cases” table contains the basic cleansed data from the JHU Data Sets which form the basis of the global view of Covid-19 cases. The “vaccinations” table contains vaccination status from the Our World in data Vaccination data set. The “full_covid_table” contains the complete set of data used to drive the visualisations for the project.
 
 10. Covid-19 Data Load:
+
 The data load phase of the assignment uses urls / wget downloads as API calls are not available for the datasets needed. The three JHU time series data sets are retrieved using this method.
+
 The Vaccination and Population data sets are downloaded from their respective sites as CSV files using the Pandas pd.read_csv function.
+
 The “create-covid-db” Jupyter Notebook transforms and cleanses the downloaded data and creates the “covid” database. 
 
 
