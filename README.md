@@ -50,6 +50,7 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 <img width="228" alt="image" src="https://user-images.githubusercontent.com/92240890/159849911-2ab337eb-6a34-43bf-975b-7475d49d2247.png">
 <img width="218" alt="image" src="https://user-images.githubusercontent.com/92240890/159849919-6552fa5d-9ec7-4951-86bc-b0f26ff71417.png">
  
+
 6. Covid-19 Visualisations:    
 As part of this project, we developed three visualizations:
 
@@ -93,7 +94,6 @@ The key to the data base was to use the International Standards Organisation (is
 The data load phase of the assignment uses urls / wget downloads as API calls are not available for the datasets needed. The three JHU time series data sets are retrieved using this method.
 
 The Vaccination and Population data sets are downloaded from their respective sites as CSV files using the Pandas pd.read_csv function.
-
 The “create-covid-db” Jupyter Notebook transforms and cleanses the downloaded data and creates the “covid” database. 
 
 
