@@ -61,15 +61,15 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 **6. Covid-19 Visualisations:**    
 **As part of this project, we developed three visualizations:**
 
-**1.A bubble chart representing confirmed cases and deaths plotted against fully vaccinated, boosted, and unvaccinated populations for each country.** 
+**1.   A bubble chart representing confirmed cases and deaths plotted against fully vaccinated, boosted, and unvaccinated populations for each country.** 
 
 <img width="455" alt="image" src="https://user-images.githubusercontent.com/92240890/159849872-ca37422b-71a5-428c-940a-d66743050db0.png">
 
-**2. A bar chart representing the ten countries with the highest number of confirmed cases as of the date of the last database update, March 15, 2022.** 
+**2.   A bar chart representing the ten countries with the highest number of confirmed cases as of the date of the last database update, March 15, 2022.** 
 
 <img width="457" alt="image" src="https://user-images.githubusercontent.com/92240890/159849860-4fa57e81-2c3a-4da5-9a07-9d512510e6b5.png">
 
-**3. Two scatter plots representing the number of confirmed cases and deaths over time for any country of the user’s choice, which can be selected using a dropdown list.** 
+**3.   Two scatter plots representing the number of confirmed cases and deaths over time for any country of the user’s choice, which can be selected using a dropdown list.** 
 
 <img width="427" alt="image" src="https://user-images.githubusercontent.com/92240890/159849846-3cabbd95-245b-4447-8cae-ecc31b86b775.png"> 
 
