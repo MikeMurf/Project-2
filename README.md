@@ -16,19 +16,19 @@ The specific requirements of the project are:
 2.8) Your final visualization should ideally include at least three views.
 
 The “Project-2” directory contains the following files submitted for assessment:
-•    “index.html” – the dashboard containing the COVID-19 visualisations created as part of this project.
-•    “app.py” – the Flask API that must be run to extract the data from the PostgreSQL database and convert it to JSON format for use in creating visualisations in the dashboard.
-•    “assets” – a folder containing the Javascript files used to create visualisations, as well as the CSS stylesheet files.
-•    “database” – a folder containing the Jupyter Notebook used to conduct the extract, transform, and load of the COVID-19 datasets, as well as schemas used to create the tables within the PostgreSQL database. 
-•    “tables” – a folder containing CSV files of the tables developed with the ETL Jupyter Notebook. 
-•    “presentation” – a folder containing “Project-2”, the PowerPoint presentation for the project,
-•    “proposal” – a folder containing "project-2-project-proposal", the original proposal for the project.
+- “index.html” – the dashboard containing the COVID-19 visualisations created as part of this project.
+- “app.py” – the Flask API that must be run to extract the data from the PostgreSQL database and convert it to JSON format for use in creating visualisations in the dashboard.
+- “assets” – a folder containing the Javascript files used to create visualisations, as well as the CSS stylesheet files.
+- “database” – a folder containing the Jupyter Notebook used to conduct the extract, transform, and load of the COVID-19 datasets, as well as schemas used to create the tables within the PostgreSQL database. 
+- “tables” – a folder containing CSV files of the tables developed with the ETL Jupyter Notebook. 
+- “presentation” – a folder containing “Project-2”, the PowerPoint presentation for the project,
+- “proposal” – a folder containing "project-2-project-proposal", the original proposal for the project.
 
 2. Team Members:
-    Megan Greenhill 
-    Hesh Kuruppuge 
-    Jacqueline Xia 
-    Mike Murphy
+- Megan Greenhill 
+- Hesh Kuruppuge 
+- Jacqueline Xia 
+- Mike Murphy
     
 3. Project Brief Description:
 The project uses a Python Flask-powered API to access an integrated PostgreSQL database that contains COVID-19 information. The database can be updated as frequently as required.
@@ -44,27 +44,20 @@ This provides the basis for an ongoing analysis of COVID-19 and its global impac
 •    A Flask-powered API was created to extract the full COVID table from the PostgreSQL database and create a JSON file.
 •    This extraction was achieved using a Python library called psycopg2.
 •    Each column of the database table was assigned to a dictionary, which was then JSONified and returned through the app. This app would then be called on in the JS script to create visualisations.
-
-          
-
+<img width="228" alt="image" src="https://user-images.githubusercontent.com/92240890/159849911-2ab337eb-6a34-43bf-975b-7475d49d2247.png">
+<img width="218" alt="image" src="https://user-images.githubusercontent.com/92240890/159849919-6552fa5d-9ec7-4951-86bc-b0f26ff71417.png">
  
 6. Covid-19 Visualisations:    
 As part of this project, we developed three visualizations:
-
 1. A bubble chart representing confirmed cases and deaths and case-fatality-ratio plotted against fully vaccinated, boosted, and unvaccinated populations for each country.
+<img width="455" alt="image" src="https://user-images.githubusercontent.com/92240890/159849872-ca37422b-71a5-428c-940a-d66743050db0.png">
 
- 
 2. A bar chart representing the ten countries with the highest number of confirmed cases as of the date of the last database update, March 15, 2022.
- 
-
-
-
-
-
+<img width="457" alt="image" src="https://user-images.githubusercontent.com/92240890/159849860-4fa57e81-2c3a-4da5-9a07-9d512510e6b5.png">
 
 3. Two scatter plots representing the number of confirmed cases and deaths over time for any country of the user’s choice, which can be selected using a dropdown list.
-
- 
+<img width="427" alt="image" src="https://user-images.githubusercontent.com/92240890/159849846-3cabbd95-245b-4447-8cae-ecc31b86b775.png">
+<img width="512" alt="image" src="https://user-images.githubusercontent.com/92240890/159850260-2a938d78-aa99-4b65-b5ea-f901223efd47.png">
  
 7. Project Datasets:
 The datasets for the project can be found at the following links.
@@ -76,8 +69,11 @@ https://www.worldometers.info/world-population/population-by-country/
 https://ourworldindata.org/covid-vaccinations
 
 8. Covid-19 Database Entity Relationship Diagram:
-Original ERD:                                    New ERD:
-                  
+Original ERD:      
+<img width="245" alt="image" src="https://user-images.githubusercontent.com/92240890/159849814-85e46589-e85d-4af4-94f1-738d830f641b.png">
+
+New ERD:
+<img width="148" alt="image" src="https://user-images.githubusercontent.com/92240890/159849787-e7925684-92f0-4ff3-98cd-2a79ffecfaa2.png">
 
 9. Covid-19 Database Description
 The key to the data base was to use the International Standards Organisation (iso_code: ISO 3166-1 alpha-3 – three-letter country code) henceforth referred to as “iso-code”, to create relationships between the tables. The “country-codes” table contains the “iso-code” and matching “country-name” for all countries covered by the “iso-code” and was generated during the Extraction phase of the project. The “covid-cases” table contains the basic cleansed data from the JHU Data Sets which form the basis of the global view of Covid-19 cases. The “vaccinations” table contains vaccination status from the Our World in data Vaccination data set. The “full_table” contains the complete set of data used to drive the visualisations for the project.
