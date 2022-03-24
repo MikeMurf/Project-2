@@ -5,17 +5,18 @@
 
 #### 1. Project Overview:
 The project was initiated to tell a story with data. 
+
 The specific requirements of the project are:
-1. Your visualization must include a Python Flask–powered API, HTML/CSS, JavaScript, and at least one database (SQL, MongoDB, SQLite, etc.).
-2. Your project should fall into one of the below four tracks:
-2.1) A custom “creative” D3.js project (i.e., a nonstandard graph or chart)
-2.2) A combination of web scraping and Leaflet or Plotly
-2.3) A dashboard page with multiple charts that update from the same data
-2.4) A “thick” server that performs multiple manipulations on data in a database prior to visualization (must be approved)
-2.5) Your project should include at least one JS library that we did not cover. 
-2.6) Your project must be powered by a data set with at least 100 records.
-2.7) Your project must include some level of user-driven interaction (e.g., menus, dropdowns, textboxes).
-2.8) Your final visualization should ideally include at least three views.
+1. Your visualization must include a Python Flask–powered API, HTML/CSS, JavaScript, and at least one database (SQL, MongoDB, SQLite, etc.). 
+3. Your project should fall into one of the below four tracks: 
+*   3.1) A custom “creative” D3.js project (i.e., a nonstandard graph or chart) 
+*   3.2) A combination of web scraping and Leaflet or Plotly 
+*   3.3) A dashboard page with multiple charts that update from the same data 
+*   3.4) A “thick” server that performs multiple manipulations on data in a database prior to visualization (must be approved)
+*   3.5) Your project should include at least one JS library that we did not cover.
+*   3.6) Your project must be powered by a data set with at least 100 records.
+*   3.7) Your project must include some level of user-driven interaction (e.g., menus, dropdowns, textboxes). 
+*   3.8) Your final visualization should ideally include at least three views.
 
 The “Project-2” directory contains the following files submitted for assessment:
 - “index.html” – the dashboard containing the COVID-19 visualisations created as part of this project.
