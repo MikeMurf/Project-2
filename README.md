@@ -1,5 +1,4 @@
-# Project-2
-## The project uses a Python Flask-powered API to access an integrated PostgreSQL database that contains COVID-19 information and provides interactive visualisations showing the state of the pandemic by country.
+# Project-2: The project uses a Python Flask-powered API to access an integrated PostgreSQL database that contains COVID-19 information and provides interactive visualisations showing the state of the pandemic by country.
 
 ## Project2:    Visualize Me, Captain!
 
